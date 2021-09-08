@@ -9,11 +9,12 @@
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js",
+    "format": "prettier --write .",
     "test": "jest",
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    ".{ts,js}":[
+    ".{ts,js}": [
       "lint"
     ]
   },
