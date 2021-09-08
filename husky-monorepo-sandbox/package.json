@@ -1,0 +1,22 @@
+{
+  "name": "husky-monorepo-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "precommit-client": "npm run precommit --prefix ./client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "husky": {
+    "hooks":{
+      "pre-commit":[
+        "npm run precommit-client"
+      ]
+    }
+  },
+  "devDependencies": {
+    "husky": "^7.0.2"
+  }
+}
