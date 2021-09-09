@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "husky": {
-    "hooks":{
-      "pre-commit":[
+    "hooks": {
+      "pre-commit": [
         "npm run precommit-client"
       ]
     }
